@@ -1,4 +1,3 @@
-
 import { useContext } from "react";
 import { ThemeContext } from "./ThemeContext";
 
@@ -8,9 +7,11 @@ const ThemeToggleButton = () => {
   return (
     <button
       onClick={toggleTheme}
-      className={`p-2 rounded ${theme === "light" ? "bg-gray-300" : "bg-gray-800 text-white"}`}
+      className={`p-3 mt-4 rounded-md text-white transition duration-300 ${
+        theme === "light" ? "bg-blue-500" : "bg-gray-700"
+      }`}
     >
-      Toggle to {theme === "light" ? "Dark" : "Light"} Mode
+      Switch to {theme === "light" ? "Dark" : "Light"} Mode
     </button>
   );
 };
