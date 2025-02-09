@@ -1,10 +1,14 @@
 import React from "react";
 import LoginStorage from "./components/LoginStorage";
+import LoginStorageFirst from "./components/LoginStorageFirst";
+import Single from "./components/Single";
 
 const App = () => {
   return (
     <>
-      <LoginStorage />
+      {/* <LoginStorage /> */}
+      {/* <Single /> */}
+      <LoginStorageFirst />
     </>
   );
 };

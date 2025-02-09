@@ -37,9 +37,10 @@ const LoginStorage = () => {
         {!isLoggedIn ? (
           <>
             <input
-              type="text"
+              type="email"
               placeholder="Enter your email"
               value={email}
+              required
               onChange={(e) => setEmail(e.target.value)}
             />
             <input
